@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
+}
+
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2{
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+h1{
+    font-size: 50px;
+}
+.navigation{
+    box-shadow: 0 0 5px 2px #6d6d6da9;
+}
+.blue-hover:hover{
+    color: rgb(3, 3, 155);
+    cursor: pointer;
+}
+#hurry-info{
+    background-color: #d6dfffab;
+}
+#products{
+    overflow-x: hidden;
+}
+#main-banner{
+    background-image: linear-gradient(to right bottom, rgba(1, 23, 51, 0.719), rgba(2, 48, 90, 0.5)),url("https://peakvisor.com/photo/sikkim-1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+#main-banner p{
+    font-size: 20px;
+}
+.banner-info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+    color: #fff;
+    gap: 20px;
+}
+.product-card{
+    box-shadow: 0 0 3px 3px transparent;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    transition: all .5s;
+}
+.product-card:hover{
+    box-shadow: 0 0 3px 3px #bfb4e088;
+    cursor: pointer;
+}
+.product-card button{
+    margin-left: 35%;
+    outline: none;
+    border: rgb(255, 255, 255) 1px dashed;
+    padding: 5px;
+}
+.product-card h5, .product-card p{
+    margin-top: 3px;
+}
+.product-card img{
+    height: 55%;
+    width: 100%;
+}
+.rating i{
+    color: rgb(230, 230, 6);
+}
+.c-img{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+}
+.testimonal{
+    padding: 10px;
+    text-align: center;
+    background: url("https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Pure-CSS-Animated-Background.gif");
+    background-position: center;
+    background-size: contain;
+    color: #fff;
+}
+.custom-carousal-div{
+    padding: 50px;
+}
+
+.custom-carousel{
+    background-image: url("https://webartdevelopers.com/blog/wp-content/uploads/2019/02/Pure-CSS-Animated-Background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.indicator:hover{
+    cursor: pointer;
+}
+.indicator{
+    border-radius: 50%;
+}
+.copyrights div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media i{
+    padding: 5px;
+}
+.social-media i:hover{
+    cursor: pointer;
+    color: #3d63ce;
+}
+.subscribe-div img{
+    width: 50px;
+    height: 50px;
+}
+.email input{
+    width: 300px;
+    padding: 8px;
+}
+.subs-btn{
+    outline: none;
+}
+.subs-btn:hover{
+    cursor: pointer;
+}
+.contact-container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-container-1 div{
+    padding: 50px;
+    border: 1px solid rgba(161, 161, 161, 0.5);
+}
+
+.contact-container div div p{
+    text-align: start;
+}
+.contact-container div{
+   margin-bottom: 20px;
+}
+
+.quick-link-box li a{
+    color: black;
+}
+
+.subs-span{
+    display: none;
+}
+#brands .brand-flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+iframe{
+    width: 450px;
+    height: 300px;
+}
+.email img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/* .custom-carousal-div{
+    padding: 50px;
+    @media(max-width:1280px)
+} */
+
+@media (max-width:480px){
+    .product-card{
+        height: 300px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .product-card p{
+        margin: 2px;
+    }
+    .product-card img{
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .contact-container-1 div{
+        padding: initial;
+    }
+}
+@media (max-width:426px){
+    .contact-container-1 div{
+        padding: initial;
+    }
+    iframe{
+        width: 300px !important;
+        height: 200px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .banner-info p{
+        font-size: 17px !important;
+    }
+    #main-banner{
+        height: 500px;
+        width: 100%;
+    }
+    .banner-info{
+        padding-top: 150px;
+        text-align: left;
+    }
+    .custom-carousal-div{
+        font-size: 15px;
+    }
+    .c-img{
+        width: 100px;
+        height: 100px;
+        padding: 0;
+    }
+    .product-card{
+        height: 300px;
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .product-card p{
+        margin: 2px;
+    }
+    .product-card img{
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .email{
+        padding: 5px;
+        margin: 5px;
+    }
+    .email input{
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+    }
+    .subs-span{
+        padding: 0 !important;
+    }
+    .quick-link-box{
+        font-size: 15px;
+    }
+    .copyrights{
+        font-size: 12px;
+    }
+    .copyrights div{
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+    #brands img{
+        width: 150px;
+    }
+    .contact-container-1 div{
+        padding: 15px;
+    }
+}
+    
+
+@media (max-width:375px) {
+    .contact-container-1 div{
+        padding: initial;
+    }
+    .product-card button{
+        margin-left: 0;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .banner-info p{
+        font-size: 15px !important;
+    }
+    #main-banner{
+        height: 400px;
+        width: 100%;
+    }
+    .banner-info{
+        padding-top: 100px;
+        text-align: left;
+    }
+    .custom-carousal-div{
+        font-size: 10px;
+    }
+    .c-img{
+        width: 100px;
+        height: 100px;
+        padding: 0;
+    }
+    iframe{
+        width: 250px;
+        height: 200px;
+    }
+    .subscribe-div img{
+        width: 50px;
+        height: 50px;
+    }
+    .email{
+        padding: 5px;
+        margin: 0;
+    }
+    .email input{
+        width: 230px;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .email img{
+        width: 30px;
+        height: 30px;
+    }
+    #products div{
+        padding: 5px;
+    }
+    h2{
+        font-size: 25px;
+        margin: 0;
+    }
+    .product-card{
+        height: 220px;
+        margin-bottom: 15px;
+        font-size: 10px;
+    }
+    .product-card p{
+        margin: 2px;
+    }
+    .product-card img{
+        height: 45%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .contact-container h3{
+        font-size: 15px;
+    }
+    .contact-container p{
+        font-size: 12px;
+    }
+    .quick-link-box{
+        font-size: 12px;
+    }
+    .copyrights{
+        font-size: 8px;
+    }
+    .copyrights div{
+        display: flex;
+        flex-direction:column;
+        padding: 5px;
+    }
+    #brands img{
+        width: 100px;
+    }
+    .contact-container-1 div{
+        padding: 15px;
+    }
+}
+@media (max-width:320px){
+    .product-card button{
+        margin-left: 20%;
+    }
+    iframe{
+        width: 150px;
+        height: 150px;
+        margin-left: -10px;
+    }
+    .subscribe-div{
+        margin-left: -15px;
+    }
+    .subscribe-div img{
+        width: 50px;
+        height: 50px;
+    }
+    .email{
+        padding: 5px;
+        margin: 0;
+    }
+    .email input{
+        width: 230px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .email img{
+        width: 25px;
+        height: 25px;
+    }
+    .contact-container-1 div{
+        padding: 15px;
+    }
+}
