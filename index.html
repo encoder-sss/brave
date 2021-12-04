@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Brave</title>
+</head>
+<body>
+    
+    <section class="navigation">
+        <nav class="navbar navbar-expand-lg container-fluid fixed-top navbar-light bg-light p-3">
+            <a class="navbar-brand name" href="index.html"><img src="logo.png" alt="logo" width="30px" height="25px" class=""> <span class="p-1">Brave</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active ">
+                  <a class="nav-link blue-hover" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link blue-hover" href="product.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link blue-hover" href="service.html">Services</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link blue-hover" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link blue-hover" href="login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link blue-hover " href="faq.html">FAQ</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+
+    <br><br><br>
+
+    <section id="main-banner">
+        <div class="container-fluid">
+            <div class="container banner-info">
+                <h1 class="animate__animated animate__fadeInLeft animate__slow">Lorem ipsum</h1>
+                <p class="animate__animated animate__fadeInRight">Vel amet natus a repudiandae debitis earum? Atque dolore ad porro quia <br> quod eaque itaque minima, esse ab laudantium!</p>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="text-center p-5" id="hurry-info">
+        <h2 class="text-danger">Hurry Up</h2>
+        <h5 class="text-success">20% off Sale is Live</h5>
+        <p>Buy any product with discounted price using the code BESTOF2021</p>
+        <h6> Offer ends in</h6>
+        <p id="hurry-time" class="text-danger p-2 animate__animated animate__flash animate__infinite animate__slower"></p>
+    </div>
+
+    <section id="products" class="conatiner">
+        <div class="conatiner p-5">
+            <h2 class="text-center text-primary">Trending products</h2>
+            <br><br>
+            <div class="row products-div">
+                <div class="col-md-3 col-sm-12 product-card">
+                    <div id="card-1">
+                        <img src="https://ae01.alicdn.com/kf/H3cac39b6de334b9f9110653d195a2b38l.jpg" alt="">
+                        <h5 class="text-center">Laptops</h5>
+                        <p class="cost text-center">50,000 /- <i class="fas fa-rupee-sign"></i></p>
+                        <p class="rating text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        <button class="btn-primary">Buy now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 product-card">
+                    <div id="card-2">
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/rfb-ipad2017-wifi-gold?wid=1144&hei=1144&fmt=jpeg&qlt=80&.v=1582589682745" alt="">
+                        <h5 class="text-center">Tablets</h5>
+                        <p class="cost text-center">50,000 /- <i class="fas fa-rupee-sign"></i></p>
+                        <p class="rating text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        <button class="btn-primary">Buy now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 product-card" >
+                    <div id="card-3" >
+                        <img src="https://www.wallpapertip.com/wmimgs/224-2249425_mobile-cover-wallpaper.jpg" alt="">
+                        <h5 class="text-center">Mobile phone</h5>
+                        <p class="cost text-center">50,000 /- <i class="fas fa-rupee-sign"></i></p>
+                        <p class="rating text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        <button class="btn-primary">Buy now</button>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 product-card">
+                    <div id="card-4">
+                        <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MYAU2_VW_34FR+watch-40-stainless-gold-cell-6s_VW_34FR_WF_CO_GEO_IN?wid=750&hei=712&trim=1,0&fmt=p-jpg&qlt=95&.v=1599010468000,1601926667000" alt="">
+                        <h5 class="text-center">Watches</h5>
+                        <p class="cost text-center">50,000 /- <i class="fas fa-rupee-sign"></i></p>
+                        <p class="rating text-center">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </p>
+                        <button class="btn-primary">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonal p-5">
+        <h2 class="text-center">Our Customers</h2>
+        <p class="personality text-center"><span>Fun. </span><span>Young. </span>Passionate. <span></span>Talented<span></span></p>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators carousel-indicators-ol">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator" style="height: 12px; width: 12px;"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1" class="indicator" style="height: 12px; width: 12px;"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2" class="indicator" style="height: 12px; width: 12px;"></li>
+            </ol>
+            <div class="carousel-inner container mx-auto">
+              <div class="carousel-item active custom-carousal-div">
+                <img class="c-img" src="test1.png" alt="First slide">
+                <p class="">numquam similique, debitis repudiandae voluptatum non, esse aliquam commodi</p>
+              </div>
+              <div class="carousel-item custom-carousal-div">
+                <img class="c-img" src="test4.png" alt="First slide">
+                <p class="">numquam similique, debitis repudiandae voluptatum non, esse aliquam commodi</p>
+              </div>
+              <div class="carousel-item custom-carousal-div">
+                <img class="c-img" src="test3.png" alt="First slide">
+                <p class="">numquam similique, debitis repudiandae voluptatum non, esse aliquam commodi</p>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </section>
+
+    <section id="quiz-section" class="">
+        <p class="text-success text-center p-3">Have you been following us since long?
+            <br>
+            Then grab a chance to get exclusive goodies by scoring 10/10 in this <a href="quiz.html">Quiz</a>
+        </p>
+    </section>
+
+    <section class="subscribe p-2">
+        <div class="subscribe-div container p-3">
+            <div class="row">
+                <img src="logo.png" alt="logo" class="ml-5">
+                <h2 class="p-2">Brave</h2>
+                <div class="email p-2 mx-auto">
+                    <input type="email" name="" id="" placeholder="Email for News and Updates">
+                    <input type="submit" value="Subscribe" class="subs-btn btn-primary" style="width: 100px;">
+                </div>
+                <br>
+                <p class="subs-span text-center text-success font-weight-bold mx-auto pt-5">Successfully subscribed! Thank you for subscribing to our newsletter. The newsletter will be sent by us to your email address.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="bg-light p-5">
+        <div class="conatiner">
+            <div class="row text-center brand-flex">
+               
+                    <img src="https://byteridge.com/assets/img/clients/microsoft.png" alt="" id="client-1">
+               
+                    <img src="https://byteridge.com/assets/img/clients/tata.png" alt="" id="client-2">
+              
+                    <img src="https://byteridge.com/assets/img/clients/marketboats-consulting.png" alt="" id="client-3">
+                
+                    <img src="https://byteridge.com/assets/img/clients/tata.png" alt="" id="client-4">
+               
+                    <img src="https://byteridge.com/assets/img/clients/marketboats-consulting.png" alt="" id="client-5">
+                
+                    <img src="https://byteridge.com/assets/img/clients/microsoft.png" alt="" id="client-6">
+                
+            </div>
+        </div>
+
+    </section>
+
+    <div class="contact text-center">
+      <div class="container">
+        <h2 class="text-center text-primary font-weight-bold p-5">Stay in touch</h2>
+        <div class="container contact-container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 contact-container-1">
+              <div>
+                <h3 class="mb-3 text-left text-primary">Talk to us</h3>
+                <p> <i class="fas fa-map-marker-alt mr-2"></i> 15A Road-3 B-block - 25</p>
+                <p> <i class="fas fa-envelope mr-2"></i> info@something.com</p>
+                <p> <i class="fas fa-phone-alt mr-2"></i> +48 5239 5355 39</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15241.16793342503!2d78.45071522784004!3d17.25310326054609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbbd5d2f119e71%3A0xed80d2685d407e77!2sThe%20Signature!5e0!3m2!1sen!2sin!4v1626167322121!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy" class="p-3"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="quick-links p-3 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="quick-link-box">
+                        <h6 class="text-primary p-2">About Brave</h6>
+                        <p class="pl-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias esse eaque natus velit dolores nulla beatae, voluptate id inventore veritatis explicabo mollitia nostrum voluptatibus facere quisquam unde ea doloribus neque!</p>
+                        <p class="social-media">
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-facebook"></i>
+                            <i class="fab fa-google-plus-g"></i>
+                            <i class="fab fa-whatsapp"></i>
+                            <i class="fab fa-instagram"></i>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="quick-link-box">
+                        <h6 class="text-primary p-2">About Us</h6>
+                        <ul class="pl-3">
+                            <li><a href="">Mission and Vision</a></li>
+                            <li><a href="">Company Profile</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Distribution Partners</a></li>
+                            <li><a href="">Our investments</a></li>
+                            <li><a href="">Careers</a></li>
+                            <li><a href="">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="quick-link-box">
+                        <h6 class="text-primary p-2">Quick Links</h6>
+                        <ul class="pl-3">
+                            <li><a href="">Login</a></li>
+                            <li><a href="">Sign Up</a></li>
+                            <li><a href="">Application Form</a></li>
+                            <li><a href="">Distribution Partners</a></li>
+                            <li><a href="">e-services</a></li>
+                            <li><a href="">FAQs</a></li>
+                            <li><a href="">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyrights bg-dark">
+        <div class="container text-white">
+            <p>copyrights &copy; 2021 Brave</p>
+            <p >Privacy and Security | Terms of Use | Cookies Policy | Site Map</p>
+        </div>
+    </section>
+
+
+    <script>
+        $(document).ready(function(){ 
+            $(".subs-btn").click(function(){
+                 $(".subs-span").show() 
+            });
+        });
+
+    </script>
+    <script>
+        window.addEventListener('scroll', function(){
+            if(document.body.scrollTop > 290 || document.documentElement.scrollTop > 290){
+                document.getElementById('card-1').className = "animate__animated animate__zoomIn animate__delay-1s";
+                document.getElementById("card-2").className = "animate__animated animate__zoomIn animate__delay-1s animate__slow";
+                document.getElementById("card-3").className = "animate__animated animate__zoomIn animate__delay-2s";
+                document.getElementById("card-4").className = "animate__animated animate__zoomIn animate__delay-2s animate__slow";
+            } 
+        });
+        window.addEventListener('scroll', function(){
+            if(document.body.scrollTop > 750 || document.documentElement.scrollTop > 750){
+                document.getElementById('client-1').className = "animate__animated animate__zoomIn animate__delay-1s";
+                document.getElementById("client-2").className = "animate__animated animate__zoomIn animate__delay-1s animate__slow";
+                document.getElementById("client-3").className = "animate__animated animate__zoomIn animate__delay-2s";
+                document.getElementById("client-4").className = "animate__animated animate__zoomIn animate__delay-2s animate__slow";
+                document.getElementById("client-5").className = "animate__animated animate__zoomIn animate__delay-3s";
+                document.getElementById("client-6").className = "animate__animated animate__zoomIn animate__delay-3s animate__slow";
+            } 
+        })
+
+        var countDownDate = new Date("Aug 6, 2023 23:59:59").getTime();
+            var x = setInterval(function(){
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60 *24))/(1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60))/1000);
+
+            document.getElementById("hurry-time").innerHTML = days + " Days " + " , " + hours + " hours " + " , " + minutes + " Min " + " , " + seconds + " sec";
+
+                if(distance < 0){
+                    clearInterval(x);
+                        document.getElementById("hurry-time").innerHTML = "offer ended";
+                }
+                    
+            },1000);
+
+
+    </script>
+
+
+
+</body>
+</html>
